@@ -1,0 +1,9 @@
+sCon: The multi-cpu converting program.
+
+
+version 0.1.2  (05/21/2009):
+	* Code clean-up
+	* Add .doc support
+	* --noconfirm option
+	* Confirmation
+	* Delete when finish question

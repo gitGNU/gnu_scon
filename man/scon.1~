@@ -1,0 +1,52 @@
+.TH "sCon" 1
+.SH NAME
+sCon - Converts privative formats to free formats
+.SH SYNOPSIS
+scon [OPTIONS] {-d DIR | -f FILE}
+.SH DESCRIPTION
+sCon is a program that convert privative files format to free file format. Now have support to convert flac, wav and mp3 to ogg, doc to txt.
+.SH OPTIONS
+.TP
+.B -h, --help
+Show help message and exit
+.TP
+.B -a, --about
+Show About message.
+.TP
+.B -l, --license
+Show License message.
+.TP
+.B -d DIR, --dir=DIR
+Select directory contains mp3 files.
+.TP
+.B -f FILE, --file=FILE
+Select a MP3 file for convert to OGG
+.TP
+.B -r, --delete
+After conversion delete MP3 files.
+.TP
+.B --select-format
+Show format selection messages.
+.TP
+.B --no-confirm
+Bypass any and all 'Continue?' and 'Delete files converted?' messages.
+.TP
+.B -e, --recursive
+Scan directories. MODE=Recursive.
+.TP
+.B --nth=n
+Specify number of threads. (Default: Number of CPUs in system)
+.SS OGG OPTIONS
+.TP
+.B --quality=n
+Set quality to OGG file.(1-10) (Default:8)
+.TP
+.B --rate=n
+Set rate to OGG file.(44100 - 48000) (Default: 44100)
+.TP
+.B --channels=n
+Set channels to OGG file.(1 - 255) (Default: 2)
+.SH LICENSE
+sCon 0.1.2, is free software under GNU GPL3.
+.SH AUTOR
+Rafik Mas'ad (Azag) <azag@puntolibre.org>

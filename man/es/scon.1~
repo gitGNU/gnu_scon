@@ -1,0 +1,54 @@
+.TH "sCon" 1
+.SH NAME
+sCon - Convierte formatos privativos a formatos libres
+.SH SINOPSIS
+scon [OPCIONES] {-d DIR | -f FILE}
+.SH DESCRIPTION
+sCon es un programa que convierte formatos privativos a formatos libres. Por ahora soporta convertir flac, wav y mp3 a ogg, doc a txt.
+.SH OPCIONES
+.TP
+.B -h, --help
+Muestra la ayuda y sale
+.TP
+.B -a, --about
+Muestra el mensaje "Acerca de"
+.TP
+.B -l, --license
+Muestra la licencia
+.TP
+.B -d DIR, --dir=DIR
+Especifica el directorio en el que se encuentran los archivos MP3.
+.TP
+.B -f FILE, --file=FILE
+Selecciona un archivo MP3 para convertirlo a OGG
+.TP
+.TP
+.B --select-format
+Muestra mensajes de seleccion de formatos.
+.TP
+.B --no-confirm
+Omite uno y todos los mensajes 'Continue?' y 'Delete files converted?'.
+.B -r, --delete
+Eliminar los MP3 tras convertirlos.
+.TP
+.B -e, --recursive
+Busca en directorios. MODE=Recursive.
+.TP
+.B --nth=n
+Especifica el número de procesos (Usa por defecto el número de CPUs en el sistema)
+.SS OGG OPTIONS
+.TP
+.B --quality=n
+Selecciona la calidad del OGG. (1-10) (Por defecto:8)
+.TP
+.B --rate=n
+Selecciona la tasa de muestreo del OGG. (44100 - 48000) (Por defecto: 44100)
+.TP
+.B --channels=n
+Selecciona el número de canales del archivo OGG.(1 - 255) (Por defecto: 2)
+.SH LICENSE
+.B sCon
+ 0.1, es software libre bajo la licencia GNU GPL3.
+.SH AUTHOR
+Rafik Mas'ad (Azag) <azag@puntolibre.org>. escribe y mantiene
+.B sCon.
