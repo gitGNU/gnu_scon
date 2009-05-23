@@ -55,7 +55,7 @@ class MainClass():
 
     (Options, args) = parser.parse_args()
 
-    aConverter.nthr = Options.nthr
+    aConverter.nthr = int(Options.nthr)
     types = mainOptD.types
 
     aConverter.rate = Options.rate
