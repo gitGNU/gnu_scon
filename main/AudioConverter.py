@@ -52,7 +52,7 @@ class AudioConverter:
     txt.close()
 
   def SetFile(self, file, types):
-    if os.path.isfile(file) and self.__get_extension(file) in self.types.keys():
+    if self.__toConvert(file):
       self.files.append(file)
 
   """ Metodo para devolver el tipo (extension) del archivo. """
